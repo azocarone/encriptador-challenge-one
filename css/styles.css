@@ -1,0 +1,166 @@
+@import url('fonts.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    background: #F3F5FC;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* */
+
+header {
+    grid-area: header;
+}
+
+article {
+    grid-area: article;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #343A40;
+    opacity: 0.8;
+}
+
+.input-area {
+    border: none;
+    outline-color: #CED4DA;
+    resize: none;
+    background: #F3F5FC;
+    font-size: 32px;
+    color: #0A3871;
+}
+
+.indicaciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.indicaciones p {
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+}
+
+.botonera {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 0 0 71px 0;
+}
+
+button {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn-encriptar {
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+.btn-encriptar:hover {
+    background: #072B61;
+}
+
+.btn-desencriptar,
+.btn-copiar {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.btn-desencriptar:hover,
+.btn-copiar:hover {
+    background: #EFF1FA;
+}
+
+aside {
+    margin: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    background: #343A40;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+footer img {
+    width: auto;
+    height: 32px;
+    vertical-align: middle;
+}
+
+footer p {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+/* */
+
+aside div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.output-area {
+    width: 300px;
+    height: 56vh;
+    background: url(../img/munheco.png) center no-repeat;
+    font-size: 24px;
+    color: #495057;
+    margin: 32px;
+}
+
+.btn-copiar {
+    width: 300px;
+    margin: 32px;
+}
