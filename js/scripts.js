@@ -3,6 +3,19 @@ const textoModificado = document.querySelector(".output-area");
 const copiar = document.querySelector(".btn-copiar");
 copiar.style.display = "none";
 
+// Enfoque / desenfoque area de entrada de texto
+
+textoIngresado.onfocus = function () {
+    textoIngresado.value = "";
+};
+
+
+textoIngresado.onblur = function () {
+    if (textoIngresado.value == "") {
+        textoIngresado.value = "Ingrese el texto aquí";
+    }
+};
+
 // Encriptación
 
 function btnEncriptar() {
@@ -111,7 +124,7 @@ function desencriptar(texto) {
 function btnCopiar() {
     navigator.clipboard.writeText(textoModificado.textContent);
     textoModificado.textContent = "";
-    textoModificado.style.backgroundImage = "url('img/munheco.png')"; 
+    textoModificado.style.backgroundImage = "url('img/munheco.png')";
     copiar.style.display = "none";
     alert("Texto copiado en Clipboard")
 }
