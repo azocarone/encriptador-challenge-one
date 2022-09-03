@@ -30,7 +30,6 @@ Por ejemplo:
 
 **Desencripta mensaje secreto:**
 
-```
+``` txt
 fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!
 ```
-
