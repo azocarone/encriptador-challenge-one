@@ -13,6 +13,8 @@ textoIngresado.onfocus = function () {
 textoIngresado.onblur = function () {
     if (textoIngresado.value == "") {
         textoIngresado.value = "Ingrese el texto aquí";
+    } else {
+        textoIngresado.value = textoIngresado.value.toLowerCase();
     }
 };
 
