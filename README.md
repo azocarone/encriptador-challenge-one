@@ -2,6 +2,10 @@
 
 ## Encriptador de Texto
 
+<p align="center">
+    <img width="600" heigth="600" src="https://github.com/azocarone/challenge-one-portafolio/blob/main/img/encriptador_print.png">
+</p>
+
 Las "llaves" de encriptación que utilizaremos son las siguientes:
 
 `La letra "e" es convertida para "enter"`
