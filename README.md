@@ -1,38 +1,47 @@
-# Challenge ONE G3 Sprint 1 | Principiante en programación
+# Encriptador de Texto
 
-## Encriptador de Texto
+**Challenge ONE G3 | Principiante en programación - Sprint 1**
 
 <p align="center">
     <img width="600" heigth="600" src="https://github.com/azocarone/challenge-one-portafolio/blob/main/img/encriptador_print.png">
 </p>
 
-Las "llaves" de encriptación que utilizaremos son las siguientes:
+Las "llaves" para la encriptación son las siguientes:
 
-`La letra "e" es convertida para "enter"`
-`La letra "i" es convertida para "imes"`
-`La letra "a" es convertida para "ai"`
-`La letra "o" es convertida para "ober"`
-`La letra "u" es convertida para "ufat"`
+```txt
+"a" : "ai",
+
+"e" : "enter",
+
+"i" : "imes",
+
+"o" : "ober",
+
+"u" : "ufat"
+```
 
 **Requisitos:**
 
-- Debe funcionar solo con letras minúsculas
-- No deben ser utilizados letras con acentos ni caracteres especiales
-- Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+- Aplicarse únicamente para letras minúsculas.
+- No emplear letras con caracteres especiales.
+- El texto debe ser encriptado, así como devolverse a su versión original.
 
 Por ejemplo:
 
-`"gato" => "gaitober"`
-`gaitober" => "gato"`
+```txt
+"gato" -> "gaitober"
 
-- La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
-- El resultado debe ser mostrado en la pantalla.
+"gaitober" -> "gato"`
+```
+
+- Se requiere un campo para el texto a encriptar o descifrar, y el usuario deberá seleccionar entre ambas opciones.
+- El resultado debe ser visible en la pantalla.
 
 **Extras:**
 
-- Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del `ctrl+C` o de la opción "copiar" del menú de las aplicaciones.
+- Botón para copiar el texto encriptado/descifrado para ser utilizado en la conversión, es decir, debe tener la misma funcionalidad del `Ctrl+C`, la opción "copiar" del menú de las aplicaciones.
 
-**Desencripta mensaje secreto:**
+**Descifrar el mensaje secreto:**
 
 ``` txt
 fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!

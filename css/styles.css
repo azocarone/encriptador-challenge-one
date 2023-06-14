@@ -1,168 +1,199 @@
-@import url('fonts.css');
+/* Modo light */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    font-size: 16px;
+
+    --color1: #f3f5fc;
+    --color2: ;
+    --color3: #0A3871;
+    --color4: #495057;
+    --color5: #eff1fa;
+    --color6: #ffffff;
+    --color7: #343A40;
 }
 
-html {
-    font-size: 16px;
+/* Modo dark */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color1: #1a1a1a;
+        --color2: #ffffff;
+        --color3: #ffffff;
+        --color4: #c7c7c7;
+        --color5: #3c3c3c;
+        --color6: #252525;
+        --color7: #ffffff;
+    }
 }
 
 body {
-    min-height: 100vh;
-    background: #F3F5FC;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
 }
 
-/* */
-
-header {
-    grid-area: header;
+.main {
+    background: var(--color1);
+    color: var(--color2);
 }
 
-article {
-    grid-area: article;
-}
-
-aside {
-    grid-area: aside;
-}
-
-footer {
-    grid-area: footer;
-}
-
-/* */
-
-header {
+.main__container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
-header h1 {
-    font-weight: 700;
-    font-size: 32px;
-    color: #343A40;
-    opacity: 0.8;
+.section {
+    flex: 0;
+    margin: 2.5rem;
 }
 
-.input-area {
+.section--medium {
+    display: flex;
+    flex-direction: column;
+    background: var(--color6);
+    box-shadow: 0px 1.5rem 2rem -0.5rem rgba(0, 0, 0, 0.8);
+    border-radius: 2rem;
+}
+
+.section__textarea {
+    width: 100%;
+    height: calc(100vh - 48.25rem);
     border: none;
-    outline-color: #CED4DA;
     resize: none;
-    background: #F3F5FC;
-    font-size: 32px;
-    color: #0A3871;
+    background: var(--color1);
+    font-size: 2rem;
+    color: var(--color3);
+    margin: 0 2rem 2rem 0;
 }
 
-.indicaciones {
+.instruction-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
-.indicaciones p {
-    font-size: 12px;
-    color: #495057;
+.instruction-container__icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.instruction-container__message {
+    font-size: 0.75rem;
+    color: var(--color4);
     opacity: 0.8;
 }
 
-.botonera {
+.button-container {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
-    margin: 0 0 71px 0;
+    gap: 1.5rem;
+    margin: 0 2rem 4.5rem 2rem;
 }
 
-button {
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    font-size: 16px;
+.button {
+    width: 100%;
+    height: 4.1875rem;
+    border-radius: 3rem;
+    font-size: 1rem;
     text-align: center;
-    transition: 1s;
     cursor: pointer;
 }
 
-.btn-encriptar {
+.button--encrypt {
     background: #0A3871;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-.btn-encriptar:hover {
+.button--encrypt:hover {
     background: #072B61;
 }
 
-.btn-desencriptar,
-.btn-copiar {
+.button--decrypt,
+.button--copy {
     box-sizing: border-box;
-    background: #FFFFFF;
-    border: 1px solid #0A3871;
+    border: 0.0625rem solid #0A3871;
     color: #0A3871;
 }
 
-.btn-desencriptar:hover,
-.btn-copiar:hover {
-    background: #EFF1FA;
+.button--decrypt:hover,
+.button--copy:hover {
+    background: var(--color5);
 }
 
-aside {
-    margin: 40px;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
+.button--disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-    background: #343A40;
+.button--hidden {
+    display: none;
 }
 
-footer div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
+.message-container {
+    text-align: center;
+    margin: auto;
 }
 
-footer img {
-    width: auto;
-    height: 32px;
-    vertical-align: middle;
+.message-container__error {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color7);
 }
 
-footer p {
-    font-size: 12px;
-    color: #FFFFFF;
+.message-container__suggestion {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color4);
 }
 
-/* !Por resolver falta mejorar unos detalles en el diseño responsive */
-
-aside div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.message-container__image {
+    display: none;
 }
 
-.output-area {
-    width: 300px;
-    height: 56vh;
-    background: url(../img/munheco.png) center no-repeat;
-    font-size: 24px;
-    color: #495057;
-    margin: 32px;
+/* Estilos para el diseño de tablet */
+
+@media (min-width: 48rem) {
+    .button-container {
+        flex-direction: row;
+    }
 }
 
-.btn-copiar {
-    width: 300px;
-    margin: 32px;
+/* Estilos para el diseño de escritorio */
+
+@media (min-width: 64.0625rem) {
+    .main__container {
+        flex-direction: row;
+    }
+
+    .section {
+        flex: auto;
+        height: 90vh;
+    }
+
+    .section--small {
+        width: 7.5rem;
+    }
+
+    .section--large {
+        width: 42.5rem;
+    }
+
+    .section--medium {
+        width: 25rem;
+    }
+
+    .section__textarea {
+        height: calc(100vh - 15.4375rem);
+    }
+
+    .message-container {
+        width: 21rem;
+    }
+
+    .message-container__image {
+        display: initial;
+    }
 }
