@@ -3,52 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge ONE - Encriptador de Texto</title>
+    <title>Encriptador de Texto</title>
+    <meta name="description" content="Challenge ONE G3 | Principiante en programación - Sprint 1">
     <meta name="author" content="José AZÓCAR">
-    <meta name="description" content="Challenge ONE - Encriptador de Texto">
+
+    <!-- Fuente proyecto: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Referencias CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
-    <main>
-
-        <header>
-            <img src="img/logo.svg" alt="Logo Alura">
-            <h1>Encriptador de Texto</h1>
-        </header>
-
-        <article>
-            <textarea class="input-area">Ingrese el texto aquí</textarea>
-            <div class="indicaciones">
-                <img src="img/exclamation.svg" alt="Icono exclamación">
-                <p>Solo letras minúsculas y sin acentos</p>
-            </div>
-            <div class="botonera">
-                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
-            </div>
-        </article>
-
-        <aside>
-            <div>
-                <div class="output-area"></div>
-                <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
-            </div>
-        </aside>
-
-        <footer>
-            <div>
-                <img src="img/azocarone.svg" alt="Logo azocarONE - José AZÓCAR">
-                <p>© 2022 azocarONE - José AZÓCAR.</p>
-            </div>
-            <p>Challenge ONE G3 Sprint 1 | Principiante en programación.</p>
-            <img src="img/logo_oracleAlura-es.svg" alt="Logo Oracle + Alura Latam">
-        </footer>
-
+    
+    <main class="main">
+        <div class="main__container">
+            <section class="section section--small">
+                <img class="section__logo" src="img/logo.svg" alt="Logo Alura">
+            </section>
+            <section class="section section--large">
+                <textarea class="section__textarea" alt="Ingrese el texto aquí">Ingrese el texto aquí</textarea>
+                <div class="instruction-container">
+                    <img class="instruction-container__icon" src="img/exclamation.svg" alt="Icono exclamación">
+                    <p class="instruction-container__message">Solo letras minúsculas y sin caracteres especiales.</p>
+                </div>
+                <div class="button-container">
+                    <button class="button button--encrypt" onclick="btnEncrypt()">Encriptar</button>
+                    <button class="button button--decrypt button--disabled" onclick="btnDecrypt()">Descifrar</button>
+                </div>
+            </section>
+            <section class="section section--medium">
+                <div class="message-container">
+                    <img class="message-container__image" src="img/cryptoman.png" alt="Imagen criptógrafo">
+                    <p class="message-container__error">Ningún mensaje fue encontrado</p>
+                    <p class="message-container__suggestion">Ingrese el texto que deseé encriptar o descifrar.</p>
+                </div>
+                <div class="button-container">
+                    <button class="button button--copy button--hidden" onclick="btnCopy()">Copiar</button>
+                </div>
+            </section>
+        </div>
     </main>
-    <script src="js/scripts.js"></script>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <section class="footer__container__section">
+                <img class="footer-section__image" src="img/azocarone.svg" alt="Logo José AZÓCAR (azocarone)">
+                <p>© 2022-2023 </p>
+                <p>José AZÓCAR (azocarone)</p>
+            </section>
+            <section class="footer__container__section footer__container__section--column">
+                <h1>Encriptador de Texto</h1>
+                <p>Challenge ONE G3 | Principiante en programación - Sprint 1</p>
+            </section>
+            <section class="footer__container__section">
+                <img class="footer__container__img" src="img/logo_oracleAlura-es.svg" alt="Logo Oracle + Alura Latam">
+            </section>
+        </div>
+    </footer>
+
 </body>
 
 </html>
