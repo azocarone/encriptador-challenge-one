@@ -1,8 +1,6 @@
 /* Modo light */
 
 :root {
-    font-size: 16px;
-
     --color1: #f3f5fc;
     --color2: black;
     --color3: #0A3871;
@@ -23,6 +21,30 @@
         --color5: #3c3c3c;
         --color6: #252525;
         --color7: #ffffff;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+
+@media screen and (max-width: 767px) {
+    :root {
+        font-size: calc(8px + 0.5vw);
+    }
+}
+
+/* Estilos para tabletas */
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    :root {
+        font-size: calc(10px + 0.5vw);
+    }
+}
+
+/* Estilos para dispositivos de escritorio */
+
+@media screen and (min-width: 1024px) {
+    :root {
+        font-size: 16px;
     }
 }
 

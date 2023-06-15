@@ -25,9 +25,9 @@
     height: 2rem;
 }
 
-/* Estilos para el diseño de escritorio */
+/* Estilos para dispositivos de escritorio */
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
     .footer__container {
         flex-direction: row;
         justify-content: space-between;

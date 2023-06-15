@@ -121,7 +121,7 @@
     display: none;
 }
 
-/* Estilos para el diseño de tablet */
+/* Estilos para tabletas */
 
 @media screen and (min-width: 768px) {
     .button-container {
@@ -129,9 +129,9 @@
     }
 }
 
-/* Estilos para el diseño de escritorio */
+/* Estilos para dispositivos de escritorio */
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
     .main__container {
         flex-direction: row;
     }
