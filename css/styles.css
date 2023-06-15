@@ -4,7 +4,7 @@
     font-size: 16px;
 
     --color1: #f3f5fc;
-    --color2: ;
+    --color2: black;
     --color3: #0A3871;
     --color4: #495057;
     --color5: #eff1fa;
@@ -155,7 +155,7 @@ body {
 
 /* Estilos para el diseño de tablet */
 
-@media (min-width: 48rem) {
+@media screen and (min-width: 768px) {
     .button-container {
         flex-direction: row;
     }
@@ -163,7 +163,7 @@ body {
 
 /* Estilos para el diseño de escritorio */
 
-@media (min-width: 64.0625rem) {
+@media screen and (min-width: 1025px) {
     .main__container {
         flex-direction: row;
     }
