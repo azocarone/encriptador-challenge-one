@@ -1,0 +1,161 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main__section {
+    margin: 2.5rem;
+}
+
+.main__section--medium {
+    display: flex;
+    flex-direction: column;
+    background: var(--back-rectangle);
+    box-shadow: 0px 1.5rem 2rem -0.5rem rgba(0, 0, 0, 0.8);
+    border-radius: 2rem;
+}
+
+.main__textarea {
+    width: 100%;
+    height: calc(100vh - 48.25rem);
+    min-height: 36px;
+    border: none;
+    resize: none;
+    background: var(--back);
+    color: var(--front-textarea);
+    font-size: 2rem;
+    margin: 0 2rem 2rem 0;
+}
+
+.main__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.main__info-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.main__info-text {
+    font-size: 0.75rem;
+    color: var(--front-info);
+    opacity: 0.8;
+}
+
+.main__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 0 2rem 4.5rem 2rem;
+}
+
+.main__btn {
+    width: 100%;
+    height: 4.1875rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.main__btn--encrypt {
+    background: #0A3871;
+    color: #ffffff;
+}
+
+.main__btn--encrypt:hover {
+    background: #072B61;
+}
+
+.main__btn--decrypt,
+.main__btn--copy {
+    box-sizing: border-box;
+    border: 0.0625rem solid #0A3871;
+    color: #0A3871;
+}
+
+.main__btn--decrypt:hover,
+.main__btn--copy:hover {
+    background: var(--back-hover);
+}
+
+.main__btn--disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.main__btn--hidden {
+    display: none;
+}
+
+.main__message {
+    text-align: center;
+    margin: auto;
+}
+
+.main__message-image {
+    display: none;
+}
+
+.main__message-error {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--front-error);
+}
+
+.main__message-suggestion {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--front-info);
+}
+
+/* Estilos para tabletas */
+
+@media screen and (min-width: 768px) {
+    .main__button {
+        flex-direction: row;
+    }
+}
+
+/* Estilos para dispositivos de escritorio */
+
+@media screen and (min-width: 1024px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .main__section {
+        flex: auto;
+        height: 90vh;
+    }
+
+    .main__section--small {
+        width: 10%;
+    }
+
+    .main__section--large {
+        width: 60%;
+    }
+
+    .main__section--medium {
+        width: 30%;
+    }
+
+    .main__textarea {
+        height: calc(100vh - 15.4375rem);
+    }
+
+    .main__message {
+        width: 21rem;
+    }
+
+    .main__message-image {
+        display: initial;
+    }
+}
