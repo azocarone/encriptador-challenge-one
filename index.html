@@ -18,39 +18,47 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
-    
+
     <main class="main">
-        <div class="main__container">
-            <div class="section section--small">
-                <img class="section__logo" src="img/logo.svg" alt="Logo Alura">
+
+        <figure class="main__section main__section--small">
+            <img src="img/logo.svg" alt="Logo Alura">
+        </figure>
+
+        <div class="main__section main__section--large">
+            <textarea class="main__textarea">Ingrese el texto aquí</textarea>
+
+            <div class="main__info">
+                <img class="main__info-icon" src="img/exclamation.svg" alt="Icono exclamación">
+                <p class="main__info-text">Solo letras minúsculas y sin caracteres especiales.</p>
             </div>
-            <div class="section section--large">
-                <textarea class="section__textarea">Ingrese el texto aquí</textarea>
-                <div class="instruction-container">
-                    <img class="instruction-container__icon" src="img/exclamation.svg" alt="Icono exclamación">
-                    <p class="instruction-container__message">Solo letras minúsculas y sin caracteres especiales.</p>
-                </div>
-                <div class="button-container">
-                    <button class="button button--encrypt" onclick="btnEncrypt()">Encriptar</button>
-                    <button class="button button--decrypt button--disabled" onclick="btnDecrypt()">Descifrar</button>
-                </div>
-            </div>
-            <div class="section section--medium">
-                <div class="message-container">
-                    <img class="message-container__image" src="img/cryptoman.png" alt="Imagen criptógrafo">
-                    <p class="message-container__error">Ningún mensaje fue encontrado</p>
-                    <p class="message-container__suggestion">Ingrese el texto que deseé encriptar o descifrar.</p>
-                </div>
-                <div class="button-container">
-                    <button class="button button--copy button--hidden" onclick="btnCopy()">Copiar</button>
-                </div>
+
+            <div class="main__button">
+                <button class="main__btn main__btn--encrypt" onclick="btnEncrypt()">Encriptar</button>
+                <button class="main__btn main__btn--decrypt main__btn--disabled"
+                    onclick="btnDecrypt()">Descifrar</button>
             </div>
         </div>
+
+        <div class="main__section main__section--medium">
+
+            <div class="main__message">
+                <img class="main__message-image" src="img/cryptoman.png" alt="Imagen criptógrafo">
+                <p class="main__message-error">Ningún mensaje fue encontrado</p>
+                <p class="main__message-suggestion">Ingrese el texto que deseé encriptar o descifrar.</p>
+            </div>
+
+            <div class="main__button">
+                <button class="main__btn main__btn--copy main__btn--hidden" onclick="btnCopy()">Copiar</button>
+            </div>
+
+        </div>
+
     </main>
 
     <footer class="footer">
