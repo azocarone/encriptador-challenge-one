@@ -1,4 +1,4 @@
-/* Modo light */
+/* Variables para colores "modo light" */
 
 :root {
     --color1: #f3f5fc;
@@ -10,7 +10,7 @@
     --color7: #343A40;
 }
 
-/* Modo dark */
+/* Variables para colores "modo dark" */
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -47,6 +47,8 @@
         font-size: 16px;
     }
 }
+
+/* Otros Estilos comunes */
 
 body {
     font-family: 'Inter', sans-serif;
