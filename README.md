@@ -3,7 +3,13 @@
 **Challenge ONE G3 | Principiante en programación - Sprint 1**
 
 <p align="center">
-    <img width="600" heigth="600" src="https://github.com/azocarone/one-challenge-encriptador/blob/main/img/screenshots.png">
+    <img width="600" heigth="600" src="https://github.com/azocarone/one-challenge-encriptador/blob/main/img/screenshot1.png">
+</p>
+
+<p align="center">
+    <video width="320" height="240" controls>
+        <source src="https://github.com/azocarone/one-challenge-encriptador/blob/main/img/videoshot1.mp4" type="video/mp4">
+    </video>
 </p>
 
 Las "llaves" para la encriptación son las siguientes:
