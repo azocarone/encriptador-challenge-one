@@ -3,7 +3,7 @@
 **Challenge ONE G3 | Principiante en programación - Sprint 1**
 
 <p align="center">
-    <img width="600" heigth="600" src="https://github.com/azocarone/one-challenge-encriptador/blob/main/img/screenshot1.png">
+    <img width="600" heigth="600" src="https://github.com/azocarone/one-challenge-encriptador/blob/main/img/screenshot2.png">
 </p>
 
 <p align="center">
