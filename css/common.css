@@ -1,26 +1,26 @@
 /* Variables para colores "modo light" */
 
 :root {
-    --back: #f3f5fc;
-    --front: black;
-    --front-textarea: #0A3871;
-    --front-info: #495057;
-    --back-hover: #eff1fa;
-    --back-rectangle: #ffffff;
-    --front-error: #343A40;
+    --color-background: #f3f5fc;
+    --color-text: black;
+    --color-textarea: #0A3871;
+    --color-info: #495057;
+    --color-background-hover: #eff1fa;
+    --color-rectangle-background: #ffffff;
+    --color-error: #343A40;
 }
 
 /* Variables para colores "modo dark" */
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --back: #1a1a1a;
-        --front: #ffffff;
-        --front-textarea: #ffffff;
-        --front-info: #c7c7c7;
-        --back-hover: #3c3c3c;
-        --back-rectangle: #252525;
-        --front-error: #ffffff;
+        --color-background: #1a1a1a;
+        --color-text: #ffffff;
+        --color-textarea: #ffffff;
+        --color-info: #c7c7c7;
+        --color-background-hover: #3c3c3c;
+        --color-rectangle-background: #252525;
+        --color-error: #ffffff;
     }
 }
 
@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 767px) {
     :root {
-        font-size: calc(8px + 0.5vw);
+        font-size: calc(8px + .5vw);
     }
 }
 
@@ -36,7 +36,7 @@
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     :root {
-        font-size: calc(10px + 0.5vw);
+        font-size: calc(10px + .5vw);
     }
 }
 
@@ -52,6 +52,6 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--back);
-    color: var(--front);
+    background: var(--color-background);
+    color: var(--color-text);
  }

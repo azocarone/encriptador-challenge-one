@@ -23,58 +23,48 @@
 </head>
 
 <body>
-
     <main class="main">
+        <img class="main__header-logo" src="img/logo.svg" alt="Logo Alura">
 
-        <figure class="main__section main__section--small">
-            <img src="img/logo.svg" alt="Logo Alura">
-        </figure>
-
-        <div class="main__section main__section--large">
-            <textarea class="main__textarea">Ingrese el texto aquí</textarea>
-
+        <div class="main__section main__section--full">
+            <textarea class="main__textarea">Ingresar el texto aquí</textarea>
             <div class="main__info">
                 <img class="main__info-icon" src="img/exclamation.svg" alt="Icono exclamación">
                 <p class="main__info-text">Solo letras minúsculas y sin caracteres especiales.</p>
             </div>
-
             <div class="main__button">
                 <button class="main__btn main__btn--encrypt" onclick="btnEncrypt()">Encriptar</button>
-                <button class="main__btn main__btn--decrypt main__btn--disabled"
-                    onclick="btnDecrypt()">Descifrar</button>
+                <button class="main__btn main__btn--decrypt main__btn--disabled" onclick="btnDecrypt()">Descifrar</button>
             </div>
         </div>
 
-        <div class="main__section main__section--medium">
-
+        <div class="main__section main__section--half">
             <div class="main__message">
                 <img class="main__message-image" src="img/cryptoman.png" alt="Imagen criptógrafo">
-                <p class="main__message-error">Ningún mensaje fue encontrado</p>
-                <p class="main__message-suggestion">Ingrese el texto que deseé encriptar o descifrar.</p>
+                <div class="main__message-text">
+                    <p class="main__message-text main__message--error">Ningún mensaje fue encontrado</p>
+                    <p class="main__message-text main__message--suggestion">Ingresar el texto que deseé encriptar o descifrar.</p>
+                </div>
             </div>
-
-            <div class="main__button">
-                <button class="main__btn main__btn--copy main__btn--hidden" onclick="btnCopy()">Copiar</button>
+            <div class="main__button main__button--hidden">
+                <button class="main__btn main__btn--copy" onclick="btnCopy()">Copiar</button>
             </div>
-
         </div>
 
     </main>
 
     <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__container__section">
-                <img class="footer-section__image" src="img/azocarone.svg" alt="Logo José AZÓCAR (azocarone)">
-                <p>© 2022-2023 </p>
-                <p>José AZÓCAR (azocarone)</p>
-            </div>
-            <div class="footer__container__section footer__container__section--column">
-                <h1>Encriptador de Texto</h1>
-                <p>Challenge ONE G3 | Principiante en programación - Sprint 1</p>
-            </div>
-            <div class="footer__container__section">
-                <img class="footer-section__image" src="img/logo_oracleAlura-es.svg" alt="Logo Oracle + Alura Latam">
-            </div>
+        <div class="footer__section">
+            <img class="footer__section-image" src="img/azocarone.svg" alt="Logo José AZÓCAR (azocarone)">
+            <p class="footer__section-text">© 2022-2023 </p>
+            <p class="footer__section-text">José AZÓCAR (azocarone)</p>
+        </div>
+        <div class="footer__section footer__section--column">
+            <p class="footer__section-text">Encriptador de Texto</p>
+            <p class="footer__section-text">Challenge ONE G3 | Principiante en programación - Sprint 1</p>
+        </div>
+        <div class="footer__section">
+             <img class="footer__section-image" src="img/logo_oracleAlura-es.svg" alt="Logo Oracle + Alura Latam">
         </div>
     </footer>
 
