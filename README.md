@@ -6,9 +6,6 @@
     <img width="600" heigth="600" src="https://github.com/azocarone/one-challenge-encriptador/blob/main/img/screenshot2.png">
 </p>
 
-<p align="center">
-https://www.youtube.com/embed/O_-lnprJrTk
-</p>
 Las "llaves" para la encriptación son las siguientes:
 
 ```txt
