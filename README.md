@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/O_-lnprJrTk"></iframe>
+https://www.youtube.com/embed/O_-lnprJrTk
 </p>
 Las "llaves" para la encriptación son las siguientes:
 
