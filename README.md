@@ -6,8 +6,9 @@
     <img width="600" heigth="600" src="https://github.com/azocarone/one-challenge-encriptador/blob/main/img/screenshot2.png">
 </p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/O_-lnprJrTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O_-lnprJrTk"></iframe>
+</p>
 Las "llaves" para la encriptación son las siguientes:
 
 ```txt
