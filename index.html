@@ -1,73 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador de Texto</title>
-    <meta name="description" content="Challenge ONE G3 | Principiante en programación - Sprint 1">
-    <meta name="author" content="José AZÓCAR">
+    <meta
+      name="description"
+      content="Challenge ONE G3 | Principiante en programación - Sprint 1"
+    />
+    <meta name="author" content="José AZÓCAR" />
 
     <!-- Fuente proyecto: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Referencias CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/footer.css">
-</head>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+  </head>
 
-<body>
+  <body>
     <main class="main">
-        <img class="main__header-logo" src="img/logo.svg" alt="Logo Alura">
+      <img
+        class="main__header-logo"
+        src="assets/img/logos/logo.svg"
+        alt="Logo Alura"
+      />
 
-        <div class="main__section main__section--full">
-            <textarea class="main__textarea">Ingresar el texto aquí</textarea>
-            <div class="main__info">
-                <img class="main__info-icon" src="img/exclamation.svg" alt="Icono exclamación">
-                <p class="main__info-text">Solo letras minúsculas y sin caracteres especiales.</p>
-            </div>
-            <div class="main__button">
-                <button class="main__btn main__btn--encrypt" onclick="btnEncrypt()">Encriptar</button>
-                <button class="main__btn main__btn--decrypt main__btn--disabled" onclick="btnDecrypt()">Descifrar</button>
-            </div>
+      <div class="main__section main__section--full">
+        <textarea class="main__textarea">Ingresar el texto aquí</textarea>
+        <div class="main__info">
+          <img
+            class="main__info-icon"
+            src="assets/img/iconos/exclamation.svg"
+            alt="Icono exclamación"
+          />
+          <p class="main__info-text">
+            Solo letras minúsculas y sin caracteres especiales.
+          </p>
         </div>
-
-        <div class="main__section main__section--half">
-            <div class="main__message">
-                <img class="main__message-image" src="img/cryptoman.png" alt="Imagen criptógrafo">
-                <div class="main__message-text">
-                    <p class="main__message-text main__message--error">Ningún mensaje fue encontrado</p>
-                    <p class="main__message-text main__message--suggestion">Ingresar el texto que deseé encriptar o descifrar.</p>
-                </div>
-            </div>
-            <div class="main__button main__button--hidden">
-                <button class="main__btn main__btn--copy" onclick="btnCopy()">Copiar</button>
-            </div>
+        <div class="main__button">
+          <button class="main__btn main__btn--encrypt" onclick="btnEncrypt()">
+            Encriptar
+          </button>
+          <button
+            class="main__btn main__btn--decrypt main__btn--disabled"
+            onclick="btnDecrypt()"
+          >
+            Descifrar
+          </button>
         </div>
+      </div>
 
+      <div class="main__section main__section--half">
+        <div class="main__message">
+          <img
+            class="main__message-image"
+            src="assets/img/cryptoman.png"
+            alt="Imagen criptógrafo"
+          />
+          <div class="main__message-text">
+            <p class="main__message-text main__message--error">
+              Ningún mensaje fue encontrado
+            </p>
+            <p class="main__message-text main__message--suggestion">
+              Ingresar el texto que deseé encriptar o descifrar.
+            </p>
+          </div>
+        </div>
+        <div class="main__button main__button--hidden">
+          <button class="main__btn main__btn--copy" onclick="btnCopy()">
+            Copiar
+          </button>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-        <div class="footer__section">
-            <img class="footer__section-image" src="img/azocarone.svg" alt="Logo José AZÓCAR (azocarone)">
-            <p class="footer__section-text">© 2022-2023 </p>
-            <p class="footer__section-text">José AZÓCAR (azocarone)</p>
-        </div>
-        <div class="footer__section footer__section--column">
-            <p class="footer__section-text">Encriptador de Texto</p>
-            <p class="footer__section-text">Challenge ONE G3 | Principiante en programación - Sprint 1</p>
-        </div>
-        <div class="footer__section">
-             <img class="footer__section-image" src="img/logo_oracleAlura-es.svg" alt="Logo Oracle + Alura Latam">
-        </div>
+      <div class="footer__section">
+        <img
+          class="footer__section-image"
+          src="assets/img/logos/azocarone.svg"
+          alt="Logo José AZÓCAR (azocarone)"
+        />
+        <p class="footer__section-text">© 2022-2023</p>
+        <p class="footer__section-text">José AZÓCAR (azocarone)</p>
+      </div>
+      <div class="footer__section footer__section--column">
+        <p class="footer__section-text">Encriptador de Texto</p>
+        <p class="footer__section-text">
+          Challenge ONE G3 | Principiante en programación - Sprint 1
+        </p>
+      </div>
+      <div class="footer__section">
+        <img
+          class="footer__section-image"
+          src="assets/img/logos/logo_oracleAlura-es.svg"
+          alt="Logo Oracle + Alura Latam"
+        />
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
