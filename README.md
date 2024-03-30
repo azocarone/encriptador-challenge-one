@@ -2,6 +2,10 @@
 
 **Challenge ONE G3 | Principiante en programación - Sprint 1**
 
+**José AZÓCAR**
+
+*Ing. en Informática / Computer Engr | Data Science | Dev Trainee/Junior*
+
 <p align="center">
     <img width="600" heigth="600" src="https://github.com/azocarone/encriptador-challenge-one/blob/main/assets/img/projects/screenshot2.gif">
 </p>
@@ -20,13 +24,13 @@ Las "llaves" para la encriptación son las siguientes:
 "u" : "ufat"
 ```
 
-**Requisitos:**
+## Requisitos
 
 - Aplicarse únicamente para letras minúsculas.
 - No emplear letras con caracteres especiales.
 - El texto debe ser encriptado, así como devolverse a su versión original.
 
-Por ejemplo:
+**Por ejemplo:**
 
 ```txt
 "gato" -> "gaitober"
