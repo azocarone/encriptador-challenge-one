@@ -28,9 +28,7 @@ Las "llaves" para la encriptación son las siguientes:
 
 - Aplicarse únicamente para letras minúsculas.
 - No emplear letras con caracteres especiales.
-- El texto debe ser encriptado, así como devolverse a su versión original.
-
-**Por ejemplo:**
+- El texto debe ser encriptado, así como devolverse a su versión original, por ejemplo:
 
 ```txt
 "gato" -> "gaitober"
